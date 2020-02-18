@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Context = React.createContext("english");
+const Context = React.createContext("english");
 
 export class LanguageStore extends React.Component {
   state = { language: "english" };
@@ -17,3 +17,5 @@ export class LanguageStore extends React.Component {
     );
   }
 }
+
+export default Context;
